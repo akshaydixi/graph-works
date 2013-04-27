@@ -4,9 +4,6 @@ class DepthFirstPaths:
 		self.marked = {}
 		self.edgeTo = {}
 		self.s = s
-		self.depthFirstSearch(g,s)
-
-	def depthFirstSearch(self,g,s):
 		for v in range(1,g.vertices()+1):
 			self.marked[v]=False
 			self.edgeTo[v]=-1
@@ -14,7 +11,6 @@ class DepthFirstPaths:
 
 	def dfs(self,g,v):
 		self.marked[v] = True
-		print g.adj(v)
 		for w in g.adj(v):
 			if not self.marked[w]:
 				self.dfs(g,w)

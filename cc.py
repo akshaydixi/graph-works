@@ -6,10 +6,10 @@ class CC:
 		self.gcount = 0
 		for i in range(1,g.vertices()+1):
 			self.marked[i] = False
-			self.id[i] = 0
+			self.gid[i] = 0
 		for v in range(1,g.vertices()+1):
 			if not self.marked[v]:
-				dfs(g,v)
+				self.dfs(g,v)
 				self.gcount+=1
 
 	def count(self):

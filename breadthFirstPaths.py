@@ -1,6 +1,6 @@
 from Queue import LifoQueue
 from graph import Graph
-class breadthFirstPaths:
+class BreadthFirstPaths:
 	def __init__(self,g,s):
 		queue = LifoQueue()
 		self.marked = {}
