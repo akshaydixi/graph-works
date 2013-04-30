@@ -6,7 +6,7 @@ class Digraph:
 		if str(type(V))[7:-2] == 'int':
 			self.V = V
 			for v in range(1,V+1):
-				self.adj[v]=[]
+				self.adjacent[v]=[]
 
 
 		if str(type(V))[7:-2] == 'str':
